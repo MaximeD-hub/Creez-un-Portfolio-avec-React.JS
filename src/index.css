@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+/* Header / Footer */
+.nav-link {
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+.active-link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  color: white;
+}
+.hero h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.btn-hero {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-hero:hover {
+  background-color: #c82333;
+}
+
+/* Présentation + compétences */
+.presentation {
+  background-color: #f8f9fa;
+}
+.presentation h2, .presentation h3 {
+  color: #343a40;
+}
+.presentation p {
+  font-size: 1.1rem;
+  color: #495057;
+}
+.presentation .progress-bar {
+  font-weight: bold;
+}
+
+/* Cards Services / Portfolio */
+.card {
+  transition: all 0.3s ease;
+}
+.card:hover {
+  background-color: #efefef;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.btn {
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+
+
+/* Footer */
+footer a:hover {
+  font-weight: bold;
+}
+footer a svg:hover {
+  fill: white;
+}
+
+/* Section générale */
+section {
+  padding: 60px 0;
+}
