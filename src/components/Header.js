@@ -1,10 +1,10 @@
 import React from "react";
-import { Navbar, Nav, Container} from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    <Navbar expand="md" variant="dark" style={{ backgroundColor: "#343a40" }}>
+    <Navbar expand="md" variant="dark" style={{ backgroundColor: "#212529" }}>
       <Container>
         <Navbar.Brand href="/">JOHN DOE</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

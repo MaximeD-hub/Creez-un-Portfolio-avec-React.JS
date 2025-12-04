@@ -28,6 +28,9 @@ html, body, #root {
 
 
 /* Header / Footer */
+.header {
+  background-color: #212529; /* couleur personnalisée */
+}
 .nav-link {
   text-transform: uppercase;
   transition: all 0.3s;
@@ -51,7 +54,6 @@ ul {
   font-size: 2em;
   margin-right: 12px;
 }
-
 .social:hover {
   color: #efefef;
   transition: all 0.3s ease;
