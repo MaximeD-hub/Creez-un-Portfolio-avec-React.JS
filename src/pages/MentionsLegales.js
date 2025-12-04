@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Accordion } from "react-bootstrap";
 
 function MentionsLegales() {
+  useEffect(() => {
+    const noIndexTag = document.createElement("meta");
+    noIndexTag.name = "robots";
+    noIndexTag.content = "noindex, nofollow";
+    document.head.appendChild(noIndexTag);
+
+    return () => {
+      document.head.removeChild(noIndexTag);
+    };
+  }, []);
+
   return (
+    
     <section className="py-5" style={{ display: 'block' }}>
       <Container>
         <h2 className="text-center mb-5">Mentions Légales</h2>
