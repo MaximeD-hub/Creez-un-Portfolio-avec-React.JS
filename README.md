@@ -25,10 +25,10 @@ Fait le 04/12/2025 par Maxime Dubois pour la formation Dévellopeur Web du CEF
 
 Prérequis
 
-Node.js (version 18 ou supérieure recommandée)
-npm ou yarn
-Navigateur moderne (Chrome, Firefox, Edge…)
-Terminal (type PowerShell) / Visual Studio Code
+-Node.js (version 18 ou supérieure recommandée)
+-npm ou yarn
+-Navigateur moderne (Chrome, Firefox, Edge…)
+-Terminal (type PowerShell) / Visual Studio Code
 
 Installation
 
