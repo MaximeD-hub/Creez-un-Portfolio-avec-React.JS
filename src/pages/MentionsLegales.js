@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+
 import { Container, Accordion } from "react-bootstrap";
 
 function MentionsLegales() {
@@ -15,7 +16,7 @@ function MentionsLegales() {
 
   return (
     
-    <section className="py-5" style={{ display: 'block' }}>
+    <section style={{ display: 'block' }}>
       <Container>
         <h2 className="text-center mb-5">Mentions Légales</h2>
         <Accordion defaultActiveKey="0">
