@@ -2,11 +2,6 @@
 Création d'un Portfolio en utilisant React.JS ainsi que le librairie de Bootstrap (couleur, icones, modules, etc...)
 Le tout réalisé sur Stucio Code et mis en ligne sur GitHub
 
-## Prérequis
-- Node.js (version 18 ou supérieure recommandée)
-- npm ou yarn
-- Navigateur moderne (Chrome, Firefox, Edge…)
-
 Consigne du devoir :
 "Votre mission, si vous l’acceptez, est de créer et de rendre fonctionnel le site internet d’un futur développeur Web, comme vous : John DOE.
 Il termine sa formation de développeur web au CEF et souhaite pouvoir se présenter sur le marché de l’emploi.
