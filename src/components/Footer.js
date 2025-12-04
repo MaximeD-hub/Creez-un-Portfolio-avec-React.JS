@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 
@@ -14,9 +13,9 @@ function Footer() {
             <p>123 Rue Exemple, 75000 Paris</p>
             <p>+33 6 12 34 56 78</p>
             <div>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-light me-2"><i class="bi bi-github"></i></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-light me-2"><i class="bi bi-twitter-x"></i></a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-light"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/github-john-doe" target="_blank" rel="noopener noreferrer" className="social"><i class="bi bi-github"></i></a>
+              <a href="https://x.com/livelikejohndoe" target="_blank" rel="noopener noreferrer" className="social"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.linkedin.com/in/john-doe-624159310/" target="_blank" rel="noopener noreferrer" className="social"><i class="bi bi-linkedin"></i></a>
             </div>
           </Col>
           <Col md={4}>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Button, Modal, ProgressBar } from "react-bootstrap";
 import heroImg from "../assets/images/hero-bg.jpg";
 import johndoeImg from "../assets/images/john-doe-about.jpg";
-import { GiPositionMarker } from "react-icons/gi";
 
 function Home() {
   const [show, setShow] = useState(false);

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
+import React from "react";
+import { Navbar, Nav, Container} from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 function Header() {

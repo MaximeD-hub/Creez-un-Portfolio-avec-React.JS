@@ -17,21 +17,29 @@ body {
   transition: all 0.3s;
 }
 .nav-link:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 .active-link {
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .footer-link {
   text-decoration: none;
   color: #efefef;
-  justify-content: left;
 }
 ul {
   list-style-type: none;
 }
+.social {
+  color: #495057;
+  font-size: 2em;
+  margin-right: 12px;
+}
 
+.social:hover {
+  color: #efefef;
+  transition: all 0.3s ease;
+}
 
 /* Hero */
 .hero {
