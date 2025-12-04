@@ -5,7 +5,7 @@ function Contact() {
   return (
     <section className="py-5">
       <Container>
-        <h2 className="text-center mb-5">Contact</h2>
+        <h2 className="text-center mb-5"><strong>Contact</strong></h2>
         <Form>
           <Form.Group className="mb-3">
             <Form.Label>Nom</Form.Label>

@@ -21,7 +21,7 @@ function Services() {
 
       <section className="py-5">
         <Container>
-          <h2 className="text-center mb-2">Mon offre de services</h2>
+          <h2 className="text-center mb-2"><strong>Mon offre de services</strong></h2>
           <h3 className="text-center mb-5">Voici les prestations sur lesquelles je peux intervenir</h3>
           <Row>
             {services.map((service, idx) => (

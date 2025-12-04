@@ -29,7 +29,7 @@ function Portfolio() {
       </div>
       <section className="py-5">
         <Container>
-          <h2 className="text-center mb-2">Portfolio</h2>
+          <h2 className="text-center mb-2"><strong>Portfolio</strong></h2>
           <h3 className="text-center mb-5">Voici quelques-unes de mes réalisations</h3>
           <Row>
             {projects.map((project, idx) => (

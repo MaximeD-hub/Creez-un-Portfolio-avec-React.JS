@@ -15,10 +15,11 @@ function Home() {
   }, []);
 
   const skills = [
-    { label: "HTML / CSS", value: 90, color: "success" },
-    { label: "JavaScript / React", value: 85, color: "info" },
-    { label: "Node.js / Express", value: 70, color: "warning" },
-    { label: "SEO & Marketing", value: 75, color: "danger" },
+    { label: "HTML 5", value: 90, color: "danger" },
+    { label: "CSS3", value: 80, color: "info" },
+    { label: "JAVASCRIPT", value: 70, color: "warning" },
+    { label: "PHP", value: 60, color: "success" },
+    { label: "REACT", value: 50, color: "primary" },
   ];
 
   return (
@@ -35,36 +36,51 @@ function Home() {
         </div>
       </section>
 
-      {/* Présentation + compétences avec image */}
-      <section className="presentation py-5" style={{ backgroundColor: "#f8f9fa" }}>
-        <div className="container">
-          <h2 className="text-center mb-5">À propos</h2>
-          <div className="row align-items-center">
-            {/* Image */}
-            <div className="col-md-4 text-center mb-4 mb-md-0">
-              <img
-                src={johndoeImg}
-                alt="John Doe"
-                className="img-fluid rounded"
-                style={{ maxHeight: "300px" }}
-              />
-            </div>
-            {/* Compétences */}
-            <div className="col-md-8">
-              <p style={{ fontSize: "1.1rem", color: "#495057" }}>
-                Bonjour, je suis John Doe, développeur web passionné par la création de sites modernes et responsives.
-              </p>
+<section className="about-skills py-5" style={{ backgroundColor: "#f8f9fa" }}>
+  <div className="container">
+    <div className="row align-items-start">
 
-              {skills.map((skill, idx) => (
-                <div className="mb-3" key={idx}>
-                  <label>{skill.label}</label>
-                  <ProgressBar now={skill.value} label={`${skill.value}%`} variant={skill.color} />
-                </div>
-              ))}
-            </div>
+      {/* À propos*/}
+      <div className="col-md-6 mb-4 mb-md-0">
+        <h2 className="mb-4 text-center text-md-start">À propos</h2>
+        <img
+          src={johndoeImg}
+          alt="John Doe"
+          className="img-fluid rounded mb-3"
+          style={{ maxHeight: "300px" }}
+        />
+        <p style={{ fontSize: "1.1rem", color: "#495057" }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Cras arcu tellus, dictum ut suscipit ultrices, rhoncus iaculis dui.
+        </p>
+        <p style={{ fontSize: "1.1rem", color: "#495057" }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Cras arcu tellus, dictum ut suscipit ultrices, rhoncus iaculis dui.
+        </p>
+        <p style={{ fontSize: "1.1rem", color: "#495057" }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Cras arcu tellus, dictum ut suscipit ultrices, rhoncus iaculis dui.
+        </p>
+      </div>
+
+      {/* Compétences*/}
+      <div className="col-md-6">
+        <h2 className="mb-4 text-center text-md-start">Compétences</h2>
+        {skills.map((skill, idx) => (
+          <div className="mb-3" key={idx}>
+            <label className="fw-bold">{skill.label} {`${skill.value}%`} </label>
+            <ProgressBar now={skill.value} variant={skill.color} />
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
 
       {/* Modale GitHub */}
       <Modal show={show} onHide={() => setShow(false)}>
