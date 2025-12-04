@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button, Modal, ProgressBar } from "react-bootstrap";
 import heroImg from "../assets/images/hero-bg.jpg";
 import johndoeImg from "../assets/images/john-doe-about.jpg";
+import { GiPositionMarker } from "react-icons/gi";
 
 function Home() {
   const [show, setShow] = useState(false);
@@ -69,19 +70,28 @@ function Home() {
       {/* Modale GitHub */}
       <Modal show={show} onHide={() => setShow(false)}>
         <Modal.Header closeButton>
-          <Modal.Title>Profil GitHub</Modal.Title>
+          <Modal.Title>Mon profil GitHub</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {githubData ? (
-            <div>
-              <p><strong>Nom :</strong> {githubData.name}</p>
-              <p><strong>Bio :</strong> {githubData.bio}</p>
-              <p><strong>Repos publics :</strong> {githubData.public_repos}</p>
-              <a href={githubData.html_url} target="_blank" rel="noopener noreferrer">Voir sur GitHub</a>
-            </div>
-          ) : (
-            <p>Chargement...</p>
-          )}
+  <div style={{ display: "flex", alignItems: "center", gap: "30px" }}>
+    
+    <img src={githubData.avatar_url} alt="avatar github" style={{ width: "300px", height: "300px", borderRadius: "10px" }} />
+
+    <div>
+      <p><i className="bi bi-person"></i> <a href={githubData.html_url} target="_blank" rel="noopener noreferrer" style={{ marginLeft: "8px" }}> {githubData.name} </a> </p>
+      <p><i className="bi bi-geo-alt"></i> {githubData.location}</p>
+      <p><i className="bi bi-card-heading"></i> {githubData.bio}</p>
+      <p><i className="bi bi-box"></i> Repositories : {githubData.public_repos}</p>
+      <p><i className="bi bi-people"></i> Followers : {githubData.followers}</p>
+      <p><i className="bi bi-people"></i> Following : {githubData.following}</p>
+    </div>
+
+  </div>
+) : (
+  <p>Chargement...</p>
+)}
+
         </Modal.Body>
       </Modal>
     </div>
